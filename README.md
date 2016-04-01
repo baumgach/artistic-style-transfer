@@ -19,4 +19,4 @@ You will also need `matplotlib`, `scikit-image`, `scikit-learn`, and `numpy`.
   
 # Examples
 
-![alt tag](https://gitlab.doc.ic.ac.uk/cbaumgar/artistic-style-transfer/blob/master/styles/japanese.jpg)
+![](styles/japanese.jpg)
