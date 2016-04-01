@@ -158,7 +158,7 @@ if __name__ == '__main__':
     CONTENT_STYLE_RATIO = 5e-6  # increase this number if you want more content, decrease for more style
     PENALTY_FACTOR = 1e-8  # for image size 2*224, 1e-7 seems to work well, for 4*224 1e-9 is enough
     MAXFUN = 2000  # 1000 seems to be more or less the minimum, 2000 is better,
-                   # running to convergence can take a very long long
+                   # running to convergence can take a very long time
 
     # These are the layers as described in the paper. Sometimes, removing conv1_1 and conv2_1 also gives nice results
     # paying more attention to higher level art concepts. Also taking the content from conv5_2 can lead to really cool
