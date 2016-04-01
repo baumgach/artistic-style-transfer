@@ -21,13 +21,15 @@ You will also need `matplotlib`, `scikit-image`, `scikit-learn`, and `numpy`.
 
 A few examples of transferring styles from various art templates:
 
+A [self-portrait by Vincent van Gogh ](https://en.wikipedia.org/wiki/Portraits_of_Vincent_van_Gogh):
+
 ![](examples/example_gogh.png)
 
-
+A pencil sketch of a dog I found online:
 
 ![](examples/example_dog.png)
 
-
+Part of a cartoon (about DOTA apparently) which I found online:
 
 ![](examples/example_stone.png)
 `
