@@ -15,5 +15,5 @@ In particular, I recommend installing the bleeding edge versions of Theano and L
   
 You will also need `matplotlib`, `scikit-image`, `scikit-learn`, and `numpy`. 
 
-    pip install scikit-image scikit-image scikit-image scikit-image
+    pip install matplotlib scikit-image scikit-image scikit-image
   
