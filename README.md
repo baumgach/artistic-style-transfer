@@ -17,3 +17,6 @@ You will also need `matplotlib`, `scikit-image`, `scikit-learn`, and `numpy`.
 
     pip install matplotlib scikit-image scikit-image scikit-image
   
+# Examples
+
+![alt tag](https://gitlab.doc.ic.ac.uk/cbaumgar/artistic-style-transfer/styles/japanese.jpg)
