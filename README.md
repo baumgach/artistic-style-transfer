@@ -23,7 +23,11 @@ A few examples of transferring styles from various art templates:
 
 ![](examples/example_gogh.png)
 
+
+
 ![](examples/example_dog.png)
+
+
 
 ![](examples/example_stone.png)
 `
