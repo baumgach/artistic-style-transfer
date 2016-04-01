@@ -1,7 +1,7 @@
 # Introduction
 
-Implementation of the artistic style transfer paper by Gatys et al. 
-[http://arxiv.org/abs/1508.06576] using the [Lasagne](http://lasagne.readthedocs.org/en/latest/) framework. 
+Implementation of the [artistic style transfer paper by Gatys et al.](http://arxiv.org/abs/1508.06576) 
+ using the [Lasagne](http://lasagne.readthedocs.org/en/latest/) framework. 
 
 The code should be run on a GPU. 
 
