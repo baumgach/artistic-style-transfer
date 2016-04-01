@@ -157,7 +157,8 @@ if __name__ == '__main__':
     IMAGE_SIZE = 4 * 224  # 2 * 224 is faster 4*224 gives better results
     CONTENT_STYLE_RATIO = 5e-6  # increase this number if you want more content, decrease for more style
     PENALTY_FACTOR = 1e-8  # for image size 2*224, 1e-7 seems to work well, for 4*224 1e-9 is enough
-    MAXFUN = 2000  # 1000 seems to be more or less the minimum, 2000 is better, running to convergence can take forever
+    MAXFUN = 2000  # 1000 seems to be more or less the minimum, 2000 is better,
+                   # running to convergence can take a very long long
 
     # These are the layers as described in the paper. Sometimes, removing conv1_1 and conv2_1 also gives nice results
     # paying more attention to higher level art concepts. Also taking the content from conv5_2 can lead to really cool
@@ -169,7 +170,7 @@ if __name__ == '__main__':
 
     # Input and output files
     CONTENT_FILENAME = 'bernhard.jpg'
-    ART_FILENAME = 'styles/scream.jpg' #vegetables.jpg'
+    ART_FILENAME = 'styles/munch_scream.jpg' #vegetables.jpg'
     OUTPUT_FILENAME = 'bernhard_munch.png'
 
     print "loading images..."
