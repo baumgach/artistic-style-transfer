@@ -56,7 +56,7 @@ def resize_image_to_input_size(image, im_size):
     return image
 
 
-def extract_aspect_box(image, aspect_ratio):
+def extract_aspect_box(image, aspect_ratio_box):
     """
     Extract a cropped region from the input image such that it matches a given aspect_ratio. The crop is
     extracted such that one dimension is preserved and the other is centrally cropped to fit the ratio.
@@ -64,13 +64,13 @@ def extract_aspect_box(image, aspect_ratio):
     image_h = image.shape[0]
     image_w = image.shape[1]
 
-    if aspect_ratio >= 1:
-        box_h = round(image_w / aspect_ratio)
+    aspect_ratio_image = get_aspect_ratio(image)
 
+    if aspect_ratio_box >= aspect_ratio_image:
+        box_h = round(image_w / aspect_ratio_box)
         image = image[image_h//2-box_h//2:image_h//2+box_h//2, ...]
     else:
-        box_w = aspect_ratio * image_h
-
+        box_w = aspect_ratio_box * image_h
         image = image[:, image_w//2-box_w//2:image_w//2+box_w//2, ...]
 
     return image

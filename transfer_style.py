@@ -151,7 +151,7 @@ if __name__ == '__main__':
 
     # display options
     VERBOSE_OPTIMISATION = True
-    DISPLAY_INPUT_IMAGES = False
+    DISPLAY_INPUT_IMAGES = True
 
     # Method parameters with tuning instructions
     IMAGE_SIZE = 4 * 224  # 2 * 224 is faster 4*224 gives better results
@@ -169,9 +169,9 @@ if __name__ == '__main__':
     STYLE_LOSS_FACTOR = CONTENT_LOSS_FACTOR / CONTENT_STYLE_RATIO
 
     # Input and output files
-    CONTENT_FILENAME = 'bernhard.jpg'
-    ART_FILENAME = 'styles/munch_scream.jpg' #vegetables.jpg'
-    OUTPUT_FILENAME = 'bernhard_munch.png'
+    CONTENT_FILENAME = 'emma.jpg'
+    ART_FILENAME = 'styles/kandinsky.jpg' #vegetables.jpg'
+    OUTPUT_FILENAME = 'emma_kandinsky.png'
 
     print "loading images..."
 
@@ -183,9 +183,18 @@ if __name__ == '__main__':
     photo = utils.check_image_format(photo)
     art = utils.check_image_format(art)
 
+    print photo.shape
+    print art.shape
+
     # resize and crop images to be the same size and aspect ratio
     aspect_ratio = utils.get_aspect_ratio(photo)
+
+    print aspect_ratio
+
     art = utils.extract_aspect_box(art, aspect_ratio)
+
+    print art.shape
+
     photo = utils.resize_image_to_input_size(photo, IMAGE_SIZE)
     art = utils.resize_image(art, photo.shape[0:2])
 
