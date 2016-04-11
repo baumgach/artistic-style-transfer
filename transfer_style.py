@@ -154,9 +154,10 @@ if __name__ == '__main__':
     DISPLAY_INPUT_IMAGES = False
 
     # Method parameters with tuning instructions
-    IMAGE_SIZE = 4 * 224  # 2 * 224 is faster 4*224 gives better results
-    CONTENT_STYLE_RATIO = 8e-6  # increase this number if you want more content, decrease for more style
-    PENALTY_FACTOR = 1e-8  # for image size 2*224, 1e-7 seems to work well, for 4*224 1e-9 is enough
+    IMAGE_SIZE = 2 * 224  # 2 * 224 is faster 4*224 gives better results
+    CONTENT_STYLE_RATIO = 5e-6  # increase this number if you want more content, decrease for more style
+                                # 5e-7 to 5e-6 is a reasonable range
+    PENALTY_FACTOR = 1e-7  # for image size 2*224, 1e-7 seems to work well, for 4*224 1e-8 is enough
     MAXFUN = 2000  # 1000 seems to be more or less the minimum, 2000 is better,
                    # running to convergence can take a very long time
 
@@ -168,10 +169,9 @@ if __name__ == '__main__':
 
     STYLE_LOSS_FACTOR = CONTENT_LOSS_FACTOR / CONTENT_STYLE_RATIO
 
-    # Input and output files
-    CONTENT_FILENAME = 'bernhard.jpg'
-    ART_FILENAME = 'styles/munch_scream.jpg' #vegetables.jpg'
-    OUTPUT_FILENAME = 'bernhard_munch2.png'
+    CONTENT_FILENAME = 'students.jpg'
+    ART_FILENAME = 'styles/monet_poppyfield.jpg' #vegetables.jpg'
+    OUTPUT_FILENAME = 'students_monet_5e-6_2000.png'
 
     print "loading images..."
 
