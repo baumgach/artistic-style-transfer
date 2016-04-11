@@ -29,7 +29,7 @@ A pencil sketch of a dog I found online:
 
 ![](examples/example_dog.png)
 
-Part of a cartoon (about DOTA apparently) which I found online:
+Part of a cartoon which I found online:
 
 ![](examples/example_stone.png)
 `
