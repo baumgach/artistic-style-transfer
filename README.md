@@ -32,4 +32,17 @@ A pencil sketch of a dog I found online:
 Part of a cartoon (about DOTA apparently) which I found online:
 
 ![](examples/example_stone.png)
-`
+
+## Landscape examples
+
+Central square at Imperial South Kensington Campus with Kandinsky's "Composition VII".
+
+![](examples/imperial_kandinsky.png)
+
+View of Queen's tower with the style of van Gogh's "Starry Night".
+
+![](examples/queens_starrynight.png)
+
+View of the lawn in front of Queen's tower with Monet's ["The Summer, Poppy Field"](http://www.wikiart.org/en/claude-monet/the-summer-poppy-field).
+
+![](examples/students_monet.png)
