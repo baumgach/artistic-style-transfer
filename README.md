@@ -21,28 +21,30 @@ You will also need `matplotlib`, `scikit-image`, `scikit-learn`, and `numpy`.
 
 A few examples of transferring styles from various art templates:
 
-A [self-portrait by Vincent van Gogh ](https://en.wikipedia.org/wiki/Portraits_of_Vincent_van_Gogh):
+## Portraits
+
+### A [self-portrait by Vincent van Gogh ](https://en.wikipedia.org/wiki/Portraits_of_Vincent_van_Gogh):
 
 ![](examples/example_gogh.png)
 
-A pencil sketch of a dog I found online:
+### A pencil sketch of a dog I found online:
 
 ![](examples/example_dog.png)
 
-Part of a cartoon which I found online:
+### Part of a cartoon which I found online:
 
 ![](examples/example_stone.png)
 
 ## Landscape examples
 
-Central square at Imperial South Kensington Campus with Kandinsky's "Composition VII".
+### Central square at Imperial South Kensington Campus with Kandinsky's "Composition VII".
 
 ![](examples/imperial_kandinsky.png)
 
-View of Queen's tower with the style of van Gogh's "Starry Night".
+### View of Queen's tower with the style of van Gogh's "Starry Night".
 
 ![](examples/queens_starrynight.png)
 
-View of the lawn in front of Queen's tower with Monet's ["The Summer, Poppy Field"](http://www.wikiart.org/en/claude-monet/the-summer-poppy-field).
+### View of the lawn in front of Queen's tower with Monet's ["The Summer, Poppy Field"](http://www.wikiart.org/en/claude-monet/the-summer-poppy-field).
 
 ![](examples/students_monet.png)
