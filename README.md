@@ -15,8 +15,16 @@ In particular, I recommend installing the bleeding edge versions of Theano and L
   
 You will also need `matplotlib`, `scikit-image`, `scikit-learn`, and `numpy`. 
 
-    pip install matplotlib scikit-image scikit-image scikit-image
+    pip install matplotlib scikit-learn scikit-image numpy
   
+# Run code on GPU
+
+Change the filenames in `transfer_style.sh` to the files you want. Then use the 
+provided shell script to farm out the job to a specific GPU. For example if your 
+has 4 GPUs and you want to run it on the second one
+
+    ./runongpuX.sh 1 transfer_style.py
+
 # Examples
 
 A few examples of transferring styles from various art templates:
