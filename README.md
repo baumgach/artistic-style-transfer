@@ -21,7 +21,7 @@ You will also need `matplotlib`, `scikit-image`, `scikit-learn`, and `numpy`.
 
 Change the filenames in `transfer_style.sh` to the files you want. Then use the 
 provided shell script to farm out the job to a specific GPU. For example if your 
-has 4 GPUs and you want to run it on the second one
+system has 4 GPUs and you want to run it on the second one
 
     ./runongpuX.sh 1 transfer_style.py
 
