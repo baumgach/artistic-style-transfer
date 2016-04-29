@@ -3,7 +3,7 @@ Code implementing the artistic style transfer method proposed by [Gatys et al.],
 the style of one image or art piece onto another image which is typically a photograph. In contrast, to the original
 paper, here the content loss function was modified to make it independent of the image size.
 
-The code uses the lasagne neural network framework and is very loosely based on the following tutorial:
+The code uses the lasagne neural network framework and is in part based on the following tutorial:
 https://github.com/Lasagne/Recipes/blob/master/examples/styletransfer/Art%20Style%20Transfer.ipynb
 
 A reasonably fast GPU is required to run this code.
@@ -33,6 +33,7 @@ from lasagne.layers import Pool2DLayer as PoolLayer
 
 import time
 import helper_functions as utils
+
 
 np.random.seed(42)
 
@@ -154,10 +155,10 @@ if __name__ == '__main__':
     DISPLAY_INPUT_IMAGES = False
 
     # Method parameters with tuning instructions
-    IMAGE_SIZE = 2 * 224  # 2 * 224 is faster 4*224 gives better results
-    CONTENT_STYLE_RATIO = 5e-6  # increase this number if you want more content, decrease for more style
+    IMAGE_SIZE = 4 * 224  # 2 * 224 is faster 4*224 gives better results
+    CONTENT_STYLE_RATIO = 5e-7 #5e-7 #5e-6  # increase this number if you want more content, decrease for more style
                                 # 5e-7 to 5e-6 is a reasonable range
-    PENALTY_FACTOR = 1e-7  # for image size 2*224, 1e-7 seems to work well, for 4*224 1e-8 is enough
+    PENALTY_FACTOR = 1e-8  # for image size 2*224, 1e-7 seems to work well, for 4*224 1e-8 is enough
     MAXFUN = 2000  # 1000 seems to be more or less the minimum, 2000 is better,
                    # running to convergence can take a very long time
 
@@ -169,11 +170,16 @@ if __name__ == '__main__':
 
     STYLE_LOSS_FACTOR = CONTENT_LOSS_FACTOR / CONTENT_STYLE_RATIO
 
-    CONTENT_FILENAME = 'students.jpg'
-    ART_FILENAME = 'styles/monet_poppyfield.jpg' #vegetables.jpg'
-    OUTPUT_FILENAME = 'students_monet_5e-6_2000.png'
+    CONTENT_FILENAME = 'input_images/emma2.jpg'
+    ART_FILENAME = 'styles/kandinsky.jpg'
+    OUTPUT_FILENAME = 'output_images/emma2_kandinsky_5e-7_large_2000.png'
+
 
     print "loading images..."
+
+    print " - CONTENT: %s" % CONTENT_FILENAME
+    print " - ART: %s" % ART_FILENAME
+    print " - OUTPUT: %s" % OUTPUT_FILENAME
 
     # read images
     photo = plt.imread(CONTENT_FILENAME)
