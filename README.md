@@ -24,6 +24,8 @@ provided shell script to farm out the job to a specific GPU. For example if your
 system has 4 GPUs and you want to run it on the second one
 
     ./runongpuX.sh 1 transfer_style.py
+    
+NOTE: You will need to adjust `runongpuX.sh` to match the CUDA paths on your system. 
 
 # Examples
 
